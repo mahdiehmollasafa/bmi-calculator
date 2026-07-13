@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>smartBMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="./bg.jpg" alt="background">
+
+    <div class="smart">
+      <h1>smart <span>BMI</span></h1>
+
+      <div class="row">
+        <div class="box">
+          <label for="number">سن</label>
+          <input type="number" id="age" placeholder="27" />
+        </div>
+
+        <div class="box">
+         <label>جنسیت</label>
+          <select id="gender">
+            <option value="male">آقا</option>
+            <option value="female">خانم</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="box">
+          <label for="number"> قد (سانتی متر)</label>
+          <input type="number" id="height" placeholder="160" />
+        </div>
+
+         <div class="box">
+          <label for="number">وزن (کیلوگرم)</label>
+          <input type="number" id="weight" placeholder="50" />
+        </div>
+    </div>
+
+    <div id="container" class="area">
+        <p id="bmi-value"></p>
+        <p id="bmi-status"></p>
+    </div>
+
+    <button class="btn" onclick="bmi()">
+        مشاهده نتیجه
+    </button>
+
+    <footer>
+        <p>Designed by Mahdieh Mollasafa</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
